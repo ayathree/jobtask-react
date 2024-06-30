@@ -3,6 +3,9 @@ import location from '../assets/location_on_black_24dp 1.png'
 import shoping from '../assets/shopping_basket_black_24dp (2) 1.png'
 import event from '../assets/event_available_black_24dp 2.png'
 import add from '../assets/Add.png'
+import qoute from '../assets/quote.png'
+import audio from '../assets/Audio Track.png'
+import group2 from '../assets/Group 108.png'
 
 
 const Home = () => {
@@ -71,6 +74,22 @@ const Home = () => {
    </div>
   </div>
 </div>
+{/* section 4 */}
+<div className="card ">
+  <div className="card-body ">
+   <div className='bg-[#F7F5F9] p-12 m-8 border-2'>
+   <h2 className="card-title">
+    <img src={qoute} alt="" />
+    Testimonials</h2>
+    <p className='mt-10'>In a fast growing and ever changing city like Bangalore, it sometimes becomes very difficult to find or connect with like minded people. Websites like hobbycue.com is a great service which helps me get in touch with, communicate, connect, and exchange ideas with other dancers. It also provides the extra benefit of finding products and services that I can avail, which I can be assured is going to be of great quality as it comes recommended by people of the hobbycue community. To have discussions, to get visibility, and to be able to safely explore various hobbies and activities in my city, all under one roof, is an excellent idea and I highly recommend it.</p>
+    <div className="flex flex-row justify-between items-center   mt-10">
+      <img className='w-2/4' src={audio} alt="" />
+      <img className='w-1/4' src={group2} alt="" />
+    </div>
+   </div>
+  </div>
+</div>
+
 
         </div>
       
