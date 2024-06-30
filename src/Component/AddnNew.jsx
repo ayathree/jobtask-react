@@ -1,13 +1,22 @@
-import logo from '../assets/HobbyCue Logo.png'
+import group from '../assets/groups_black_24dp (1) 1.png'
+import location from '../assets/location_on_black_24dp 1.png'
+import shoping from '../assets/shopping_basket_black_24dp (2) 1.png'
+import event from '../assets/event_available_black_24dp 2.png'
+import logo from '../assets/HobbyCue Logo v2 1.png'
 import layer from '../assets/Layer_2.png'
 import hobby from '../assets/Hobbies.png'
+import face from '../assets/Ellipse 23.png'
+import arrow from '../assets/Arrow.png'
+import add from '../assets/Add.png'
 import { FaBookmark, FaShoppingCart } from 'react-icons/fa';
 import { IoIosNotifications } from 'react-icons/io';
-import arrow from '../assets/icons8_expand_arrow 1.png'
 
-const Navbar = () => {
+const AddnNew = () => {
     return (
-        <div>
+        <div className='container mx-auto lg:px-8 py-8 px-3'>
+            {/* nav */}
+            <nav >
+            <div>
             <div className="navbar mb-10 bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
@@ -63,39 +72,70 @@ const Navbar = () => {
       <li><a>
         <img src={layer} alt="" />
         Explore</a></li>
-        <div className="dropdown  dropdown-end">
-  <div tabIndex={0} role="button" className=" m-1">
-    <img src={arrow} alt="" />
-  </div>
-  <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-    <li><a>People - Community</a></li>
-    <li><a>Places - Venues</a></li>
-    <li><a>Programs - Events</a></li>
-    <li><a>Products - Store</a></li>
-    <li><a>Blogs</a></li>
-  </ul>
-</div>
       <li><a>
-      
       <img src={hobby} alt="" />
         Hobbies</a></li>
-        <div className="dropdown dropdown-end">
-  <div tabIndex={0} role="button" className=" m-1">
-    <img src={arrow} alt="" />
-  </div>
-  
-</div>
       <li><a href=""><FaBookmark className='text-[#8064A2]' /></a></li>
       <li><a href=""><IoIosNotifications className='text-xl text-[#8064A2]' /></a></li>
       <li><a href=""><FaShoppingCart className='text-[#8064A2]' /></a></li>
      
     </ul>
-    <button className="btn btn-outline  text-[#8064A2]">Sign In</button>
+    <img src={face} alt="" />
+    <img src={arrow} alt="" />
   </div>
   
 </div>
         </div>
+            </nav>
+            {/* body */}
+            <div className=''>
+            <div className='flex flex-row justify-center items-center gap-2'>
+            <img src={add} alt="" />
+                <h1 className='text-center text-2xl font-bold'>Add Your Listing</h1>
+            </div>
+            <div className="p-12 grid grid-cols-1  lg:grid-cols-2 justify-center items-center gap-3">
+           <div className="card bg-base-100  border-2 border-[#8064A2] hover:bg-[#8064A2] hover:text-white rounded-lg ">
+  <div className="card-body">
+    <h2 className="card-title">
+        <img src={group} alt="" />
+        People</h2>
+    <p>Find a teacher, coach, or expert for your hobby interest in your locality.  Find a partner, teammate, accompanist or collaborator.</p>
+    
+  </div>
+</div>
+<div className="card bg-base-100  border-2 border-[#77933C] hover:bg-[#77933C] hover:text-white rounded-lg ">
+  <div className="card-body">
+    <h2 className="card-title">
+    <img src={location} alt="" />
+        Place</h2>
+    <p>Find a class, school, playground, auditorium, studio, shop or an event venue.  Book a slot at venues that allow booking through hobbycue.</p>
+    
+  </div>
+</div>
+<div className="card bg-base-100  border-2 border-[#C0504D] hover:bg-[#C0504D] hover:text-white rounded-lg ">
+  <div className="card-body">
+    <h2 className="card-title">
+    <img src={shoping} alt="" />
+        Product</h2>
+    <p>Find equipment or supplies required for your hobby.  Buy, rent or borrow from shops, online stores or from community members.</p>
+    
+  </div>
+</div>
+<div className="card bg-base-100  border-2 border-[#0096C8] hover:bg-[#0096C8] hover:text-white rounded-lg ">
+  <div className="card-body">
+    <h2 className="card-title">
+        <img src={event} alt="" />
+        Program</h2>
+    <p>Find events, meetups and workshops related to your hobby.  Register or buy tickets online.</p>
+    
+  </div>
+</div>
+
+            </div>
+            </div>
+            
+        </div>
     );
 };
 
-export default Navbar;
+export default AddnNew;

@@ -10,6 +10,7 @@ import Root from './Page/Root';
 
 import MainBody from './Page/MainBody';
 import Joinin from './Component/Joinin';
+import AddnNew from './Component/AddnNew';
 
 
 const router = createBrowserRouter([
@@ -25,11 +26,16 @@ const router = createBrowserRouter([
           {
             path:'/join',
             element:<Joinin></Joinin>
-          }
+          },
+          
         
      
     ]
   },
+  {
+    path:'/add',
+    element:<AddnNew></AddnNew>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

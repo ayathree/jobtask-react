@@ -7,6 +7,8 @@ import qoute from '../assets/quote.png'
 import audio from '../assets/Audio Track.png'
 import group2 from '../assets/Group 108.png'
 import grp3 from '../assets/Group 99.png'
+import icons from '../assets/Group 64.png'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -70,7 +72,7 @@ const Home = () => {
     Add your own</h2>
     <p className='mt-10'>Are you a teacher or expert?  Do you sell or rent out equipment, venue or event tickets?  Or, you know someone who should be on hobbycue?  Go ahead and Add your Own page</p>
     <div className="card-actions justify-start mt-10">
-      <button className="btn btn-outline border-2 text-[#8064A2]">Add New</button>
+      <Link to={'/add'}><button className="btn btn-outline border-2 text-[#8064A2]">Add New</button></Link>
     </div>
    </div>
   </div>
@@ -104,6 +106,56 @@ const Home = () => {
     <img className='mt-20' src={grp3} alt="" />
    </div>
   </div>
+</div>
+{/* footer */}
+<div>
+<footer className="footer  text-black p-10">
+  <nav>
+    <h6 className="footer-title">Hobbycue</h6>
+    <a className="link link-hover">About Us</a>
+    <a className="link link-hover">Our Services</a>
+    <a className="link link-hover">Work with Us</a>
+    <a className="link link-hover">FAQ</a>
+    <a className="link link-hover">Contact Us</a>
+  </nav>
+  <nav>
+    <h6 className="footer-title">How Do I</h6>
+    <a className="link link-hover">Sign Up</a>
+    <a className="link link-hover">Add a Listing</a>
+    <a className="link link-hover">Claim Listing</a>
+    <a className="link link-hover">Post a Query</a>
+    <a className="link link-hover">Add a Blog Post</a>
+    <a className="link link-hover">Other Queries</a>
+  </nav>
+  <nav>
+    <h6 className="footer-title">Quick Links</h6>
+    <a className="link link-hover">Listings</a>
+    <a className="link link-hover">Blog Posts</a>
+    <a className="link link-hover">Shop / Store</a>
+    <a className="link link-hover">Community</a>
+  </nav>
+  <form>
+    <h6 className="footer-title">Social Media</h6>
+    <fieldset className="form-control w-80">
+      <label className="label">
+        <img src={icons} alt="" />
+      </label>
+      <h6 className="footer-title mt-5 ">Invite Friends</h6>
+      <div className="join">
+        <input
+          type="text"
+          placeholder="email id"
+          className="input input-bordered border-2 border-[#8064A2] join-item" />
+        <button className="btn  bg-[#8064A2] join-item text-white" >invite</button>
+      </div>
+    </fieldset>
+  </form>
+</footer>
+<footer className="footer footer-center bg-[#F7F5F9] text-base-content p-4">
+  <aside>
+    <p>© Purple Cues Private Limited</p>
+  </aside>
+</footer>
 </div>
 
 
