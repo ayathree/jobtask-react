@@ -6,6 +6,7 @@ import add from '../assets/Add.png'
 import qoute from '../assets/quote.png'
 import audio from '../assets/Audio Track.png'
 import group2 from '../assets/Group 108.png'
+import grp3 from '../assets/Group 99.png'
 
 
 const Home = () => {
@@ -89,6 +90,22 @@ const Home = () => {
    </div>
   </div>
 </div>
+{/* section 5 */}
+<div className="card bg-[#F7FDFF] rounded-lg">
+  <div className="card-body ">
+   <div className=' p-12 m-8 '>
+   <h2 className="card-title text-2xl poppins-semibold-italic">
+   
+    Your <span className='text-[#8064A2]'> Hobby</span>, Your <span className='text-[#0096C8]'>Community...</span></h2>
+    <div className="card-actions justify-start mt-10">
+      <button className="btn text-white   bg-[#8064A2]">Get Started</button>
+    </div>
+    
+    <img className='mt-20' src={grp3} alt="" />
+   </div>
+  </div>
+</div>
+
 
 
         </div>
