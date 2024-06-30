@@ -6,25 +6,27 @@ import { Link } from 'react-router-dom';
 const Joinin = () => {
     return (
         <div>
-             <div className="hero bg-base-200 min-h-screen p-12 ">
+             <div className="hero bg-base-200 min-h-screen lg:p-12 ">
   <div className="hero-content flex-col lg:flex-row justify-between items-center gap-20">
     <div className="text-center lg:text-left">
       <h1 className="text-3xl  mb-10 poppins-semibold-italic ">Explore your <span className='text-[#0096C8]'>hobby</span> or <span className='text-[#8064A2]'>passion</span></h1>
       <p className="text-xs mb-10 ">
-      Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers, classNamees, workshops, and places to practice, participate or perhtmlForm. Your hobby may be about visual or perhtmlForming arts, sports, games, gardening, model making, cooking, indoor or outdoor activities…
+      Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers, classNamees, workshops, and places to practice, participate or perform. <span className='hidden lg:block'> Your hobby may be about visual or perhtmlForming arts, sports, games, gardening, model making, cooking, indoor or outdoor activities…</span>
       <br  />
       
+      <span className='hidden lg:block'>
       If you are an expert or a seller, you can Add your Listing and promote yourself, your students, products,  services or events.  Hop on your hobbyhorse and enjoy the ride.
+      </span>
       
 
       </p>
       <img src={group} alt="" />
     </div>
-    <div className="card  w-full max-w-sm shrink-0 ">
+    <div className="card  lg:w-full max-w-sm shrink-0 ">
    
    
 
-    <div className=" px-6 py-8 md:px-8 ">
+    <div className=" lg:px-6 lg:py-8 md:px-8 ">
         
 
        <div className='flex lg:flex-row justify-start items-center gap-3 '>
