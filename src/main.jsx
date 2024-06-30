@@ -7,7 +7,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './Page/Root';
-import Home from './Page/Home';
+
+import MainBody from './Page/MainBody';
+import Joinin from './Component/Joinin';
 
 
 const router = createBrowserRouter([
@@ -17,8 +19,15 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element:<Home></Home>
-      }
+        element:<MainBody></MainBody>,
+      },
+        
+          {
+            path:'/join',
+            element:<Joinin></Joinin>
+          }
+        
+     
     ]
   },
 ]);
