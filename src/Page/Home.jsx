@@ -2,6 +2,7 @@ import group from '../assets/groups_black_24dp (1) 1.png'
 import location from '../assets/location_on_black_24dp 1.png'
 import shoping from '../assets/shopping_basket_black_24dp (2) 1.png'
 import event from '../assets/event_available_black_24dp 2.png'
+import add from '../assets/Add.png'
 
 
 const Home = () => {
@@ -56,6 +57,21 @@ const Home = () => {
 </div>
 
             </div>
+            {/* section 3 */}
+            <div className="card bg-[#F7FDFF] rounded-lg">
+  <div className="card-body ">
+   <div className='bg-white p-12 m-8 border-2'>
+   <h2 className="card-title">
+    <img src={add} alt="" />
+    Add your own</h2>
+    <p className='mt-10'>Are you a teacher or expert?  Do you sell or rent out equipment, venue or event tickets?  Or, you know someone who should be on hobbycue?  Go ahead and Add your Own page</p>
+    <div className="card-actions justify-start mt-10">
+      <button className="btn btn-outline border-2 text-[#8064A2]">Add New</button>
+    </div>
+   </div>
+  </div>
+</div>
+
         </div>
       
     );
